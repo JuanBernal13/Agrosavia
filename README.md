@@ -6,7 +6,7 @@ Repositorio usado para realizar avances en la tesis de Juan Andrés Bernal Gil.
 
 - [Introducción](#introducción)
 - [Marco teórico](#marco-teórico)
-- [Papers Encontrados](#papers-encontrados)
+- [Bibliografía](https://github.com/JuanBernal13/Agrosavia/tree/main/Bibliografia)
 - [Avances en Código](#avances-en-código)
 - [Instalación](#instalación)
 
