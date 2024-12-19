@@ -1,11 +1,10 @@
 name: Ejecutar run.py de Simulacion_Agentes
 
-# Disparadores del workflow
 on:
   push:
     branches: [ main ]  
   schedule:
-    - cron: '0 0 * * *' 
+    - cron: '0 0 * * *'  # Ejecuta diariamente a medianoche UTC
 
 jobs:
   run-script:
@@ -26,7 +25,13 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Ejecutar run.py
+      - name: Ejecutar run.py y guardar logs
         working-directory: Simulacion_Agentes/project
         run: |
-          python run.py
+          python run.py > run_log.txt 2>&1
+
+      - name: Guardar log como artefacto
+        uses: actions/upload-artifact@v3
+        with:
+          name: run_log
+          path: Simulacion_Agentes/project/run_log.txt
