@@ -14,12 +14,12 @@ def multi_run_simulation(n_runs=10):
     params = {
         'width': 200,
         'height': 200,
-        'initial_kpn_population': 5000,
+        'initial_kpn_population': 20,
         'n_patients': 300,
         'n_workers': 30,
         'n_equipment': 10,
         'n_clones': 10,
-        'max_steps': 700
+        'max_steps': 20
     }
 
     runs_data = []
