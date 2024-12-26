@@ -12,14 +12,14 @@ def single_run_simulation(params):
 def multi_run_simulation(n_runs=10):
     print("[RUN] Ejecutando múltiples réplicas.")
     params = {
-        'width': 20,
-        'height': 20,
-        'initial_kpn_population': 500,
-        'n_patients': 30,
-        'n_workers': 8,
+        'width': 200,
+        'height': 200,
+        'initial_kpn_population': 5000,
+        'n_patients': 300,
+        'n_workers': 30,
         'n_equipment': 10,
-        'n_clones': 5,
-        'max_steps': 40
+        'n_clones': 10,
+        'max_steps': 700
     }
 
     runs_data = []
